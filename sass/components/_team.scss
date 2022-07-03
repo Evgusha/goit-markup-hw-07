@@ -1,0 +1,74 @@
+/*-----TEAM-----*/
+.team-section {
+    background-color: #F5F4FA;   
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team-title-list {
+    margin-bottom: 50px;
+}
+ 
+.team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color:  $text-color;
+    padding-top: 30px;
+    padding-bottom: 10px;   
+}
+.team-list {
+    display: flex;
+ }
+ 
+.team-text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: $text-color;
+    padding-bottom: 16px;
+}
+ 
+.team-item {
+    background-color: $light-color;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+ 
+.team-item:not(:last-child) {
+    margin-right: 30px;
+}
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+ }
+.team-icon-item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+.team-icon-item:last-child {
+    margin-right: 0;
+}
+.team-icon-link {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms ease;
+}
+.team-icon-link:hover, .team-icon-link:focus {
+    background-color: $accent-color;
+}
+ .team-icon-link:hover .icon-soc,
+ .team-icon-link:focus .icon-soc {
+    fill: #FFFFFF;
+}
+.icon-soc {
+    fill: #AFB1B8;
+    transition: fill 250ms ease;
+}
+ 

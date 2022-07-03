@@ -1,0 +1,77 @@
+
+/*------------HEDER------------*/
+
+.header {
+    background-color: $light-color;
+    border-bottom: 1px solid #ECECEC;
+}
+.header .container {
+  display: flex;   
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header-logo {
+
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: black;
+}
+.logo-span {
+    color: $accent-color;
+}
+.header-list {
+    display: flex;
+    margin-left: 93px;
+}
+.header-it:not(:last-child) {
+    margin-right: 50px;
+}
+.header-item {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-color;
+    transition: color 250ms ease;
+    position: relative;
+}
+.header-item.curent::after {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    left: 0;
+    bottom: -34px;
+}
+.header-link {
+    margin-left: auto;
+    display: flex;
+    padding-top: 32px;
+    margin-right: 15px;
+}
+
+.mail {
+    margin-right: 50px;
+}
+.tel, .mail {
+    font-weight: 500;
+    color:$text-color;
+    transition: color 250ms ease;
+}
+.icon-hager {
+   fill: currentColor;
+}
+
+.header-item:hover, .mail:hover, .header-item:focus, .mail:focus, .tel:hover,.tel:focus {
+    color: $accent-color;
+    fill: $accent-color;
+}
