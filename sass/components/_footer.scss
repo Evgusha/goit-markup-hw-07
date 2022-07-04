@@ -13,23 +13,23 @@
 .footer .container {
     display: flex;
 }
-.footer-logo {
+.footer__logo {
     font-family:'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     color: $light-color;
 }
-.logo-span {
+.footer__logo--accent {
     color: $accent-color;
 } 
     
-.footer-address {
+.footer__address {
     color: $light-color;
     font-style: normal;
 }
 
-.footer-mail{
+.footer__mail{
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     transition: color 250ms ease;
@@ -37,7 +37,7 @@
         color: $accent-color;
     }
 }
-.fotter-tel{
+.fotter__tel{
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     transition: color 250ms ease; 
@@ -46,15 +46,15 @@
     color: $accent-color;}
 }
 
-.footer-list {
+.footer__list {
     width: 231px;
     padding-top: 20px;
 }
-.footer-item {
+.footer__item {
     padding-bottom: 9px;
 }
 
-.footer-title {
+.footer__title {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -66,26 +66,21 @@
     margin-bottom: 20px;
     margin-top: 12px;
 }
-.f-icon {
+.footer-blok__icon {
     margin-left: 70px;
 }
 
-.footer-soc-list {
+.footer__soc-list {
     display: flex;
 }
-.footer-icon-item {
+.footer__icon-item {
     width: 44px;
     height: 44px;
     margin-right: 10px; 
 }
-.footer-icon-link:last-child {
-    margin-right: 0;
-}
-.footer-icon-link:first-child {
-    margin-left: 0;
-}
 
-.footer-icon-link {
+
+.footer__icon-link {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -94,23 +89,29 @@
     justify-content: center;
     align-items: center;
     transition: background-color 250ms ease;
+    
+    &:hover, &:focus {
+    background-color: $accent-color;}
+    &:last-child {
+    margin-right: 0;}   
+
+    &:first-child {
+    margin-left: 0;}
 }
-.footer-icon-soc {
+.footer__icon-soc {
     fill: #FFFFFF;
 }
 
-.footer-icon-link:hover, .footer-icon-link:focus {
-    background-color: $accent-color;
-}
-.footer-check {
+
+.footer__check {
     display: block;
     margin-left: 93px;
 }
-.footer-position {
+.footer__input--position {
     display: flex;
     justify-content: flex-start;
 }
-.footer-input {
+.footer__input {
     background-color: transparent;
     width: 358px;
     height: 50px;
@@ -123,16 +124,17 @@
     line-height: 20px;
     display: flex;
     margin-right: 12px;
-}
-.footer-input::placeholder {
+    
+    &::placeholder {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);}
 }
-.footer-btn {
+
+.footer__btn {
     width: 200px;
     height: 50px;
     background: #2196F3;
@@ -151,7 +153,7 @@
     color: #FFFFFF;
 }
 
-.footer-icon-btn {
+.footer__icon-btn {
     fill: #FFFFFF;
     margin-left: 10px;
     position: absolute;

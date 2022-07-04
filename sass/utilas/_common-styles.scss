@@ -38,3 +38,10 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 }
+.title__down {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: $title-color;
+}
