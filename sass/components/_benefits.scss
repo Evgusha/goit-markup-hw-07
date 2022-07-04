@@ -9,10 +9,7 @@
     display: flex;   
 }
 
-.benefits-item:not(:last-child) {
-    margin-right: 30px;
-    
-}   
+  
 .benefits-icon {
     width: 70px;    
     height: 70px; 
@@ -31,6 +28,10 @@
 .benefits-item {
     width: 270px;    
     height: 251px;
+    
+    &:not(:last-child) {
+    margin-right: 30px;
+    } 
 }
 .benefits-title {
     font-size: 14px;

@@ -30,16 +30,17 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition: border-color 250ms ease;
+
+    &:hover, &:focus {
+    border-color: $accent-color;}
+    
+    &:hover .icon-clients, 
+    &:focus .icon-clients {
+    fill: $accent-color;}
 }
 .icon-clients {
     fill: #AFB1B8;
     transition: fill 250ms ease;
 }
 
-.clients-icon-link:hover, .clients-icon-link:focus {
-    border-color: $accent-color;
-}
-.clients-icon-link:hover .icon-clients, 
-.clients-icon-link:focus .icon-clients {
-    fill: $accent-color;
-}
+

@@ -475,10 +475,6 @@ body {
   display: flex;
 }
 
-.benefits-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .benefits-icon {
   width: 70px;
   height: 70px;
@@ -504,6 +500,9 @@ body {
 .benefits-item {
   width: 270px;
   height: 251px;
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .benefits-title {
@@ -721,20 +720,17 @@ body {
   -webkit-transition: border-color 250ms ease;
   transition: border-color 250ms ease;
 }
+.clients-icon-link:hover, .clients-icon-link:focus {
+  border-color: #2196F3;
+}
+.clients-icon-link:hover .icon-clients, .clients-icon-link:focus .icon-clients {
+  fill: #2196F3;
+}
 
 .icon-clients {
   fill: #AFB1B8;
   -webkit-transition: fill 250ms ease;
   transition: fill 250ms ease;
-}
-
-.clients-icon-link:hover, .clients-icon-link:focus {
-  border-color: #2196F3;
-}
-
-.clients-icon-link:hover .icon-clients,
-.clients-icon-link:focus .icon-clients {
-  fill: #2196F3;
 }
 
 /*-----FOOTER-----*/
