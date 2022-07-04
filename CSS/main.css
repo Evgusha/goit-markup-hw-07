@@ -323,7 +323,7 @@ body {
   margin-bottom: 30px;
 }
 
-.modal-form__galka--text {
+.modal__galka--text {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -335,8 +335,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 4px;
 }
-.modal-form__galka--text::before {
+
+.modal__galka--text::before {
   content: "";
   width: 16px;
   height: 15px;
@@ -345,18 +347,20 @@ body {
   margin-right: 8px;
   margin-left: 12px;
 }
-.check:checked + .modal-form__galka--text::before {
+
+.check:checked + .modal__galka--text::before {
   background-color: #2196F3;
   border: none;
   background-image: url(../img/Vector.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
-.check:focus + .modal-form__galka--text::before {
+
+.check:focus + .modal__galka--text::before {
   border-color: #2196F3;
 }
 
-modal-form__galka--link {
+.galka__link {
   color: #2196F3;
   margin-left: 4px;
 }

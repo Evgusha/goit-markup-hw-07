@@ -53,19 +53,19 @@
     resize: none;
     outline: none;
     &::placeholder {
-        color: rgba(117, 117, 117, 0.5);
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        letter-spacing: 0.01em; 
-        }
+    color: rgba(117, 117, 117, 0.5);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em; 
+    }
 }
 
 .modal-form__galka {
     margin-top: 25px;
     margin-bottom: 30px;
 }
-.modal-form__galka--text {
+.modal__galka--text {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -73,31 +73,33 @@
     color: #757575;
     display: flex;
    align-items: center;
-   
-    &::before {
+   margin-right: 4px;
+    
+}
+.modal__galka--text::before {
     content: "";
     width: 16px;
     height: 15px;
     border: 2px solid #212121;
     border-radius: 3px;
     margin-right: 8px;
-    margin-left: 12px;}
-    
-    .check:checked + &::before {
+    margin-left: 12px;
+}
+
+.check:checked + .modal__galka--text::before {
     background-color: $accent-color;
     border: none;
     background-image: url(../img/Vector.svg);
     background-repeat: no-repeat;
     background-position: center;
-    }
-    .check:focus + &::before {
-    border-color: $accent-color;
-    }
 }
+.check:focus + .modal__galka--text::before {
+    border-color: $accent-color;
+}
+.galka__link {
+    color: $accent-color;
+    margin-left: 4px;
 
-.modal-form__galka--link {
-color: $accent-color;
-margin-left: 4px;
 }
 
 .modal__text {
