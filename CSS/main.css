@@ -738,9 +738,6 @@ body {
   background-color: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -777,6 +774,9 @@ body {
   -webkit-transition: color 250ms ease;
   transition: color 250ms ease;
 }
+.footer-mail:hover, .footer-mail:focus {
+  color: #2196F3;
+}
 
 .fotter-tel {
   color: rgba(255, 255, 255, 0.6);
@@ -784,8 +784,7 @@ body {
   -webkit-transition: color 250ms ease;
   transition: color 250ms ease;
 }
-
-.footer-mail:hover, .footer-mail:focus, .fotter-tel:hover, .fotter-tel:focus {
+.fotter-tel:hover, .fotter-tel:focus {
   color: #2196F3;
 }
 

@@ -3,15 +3,13 @@
     background-color: $footer-color;
     padding-top: 60px;
     padding-bottom: 60px;  
-}
-
-.footer {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
+
 .footer .container {
     display: flex;
 }
@@ -35,15 +33,19 @@
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     transition: color 250ms ease;
+    &:hover, &:focus {
+        color: $accent-color;
+    }
 }
 .fotter-tel{
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
-    transition: color 250ms ease;
+    transition: color 250ms ease; 
+    
+    &:hover, &:focus{
+    color: $accent-color;}
 }
-.footer-mail:hover, .footer-mail:focus, .fotter-tel:hover, .fotter-tel:focus{
-    color: $accent-color;
-}
+
 .footer-list {
     width: 231px;
     padding-top: 20px;
